@@ -1,0 +1,18 @@
+{
+  "name": "crud_hw",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "client": "parcel src/index.html --port 3000",
+    "server": "json-server --watch db.json --port 1111",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^10.0.5",
+    "json-server": "^1.0.0-beta.15",
+    "parcel": "^2.16.4"
+  }
+}
